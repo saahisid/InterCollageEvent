@@ -1,0 +1,10 @@
+G:\Divya\intercollege\intercollege\bin\intercollege.dll
+G:\Divya\intercollege\intercollege\bin\intercollege.pdb
+G:\Divya\intercollege\intercollege\obj\Release\ResolveAssemblyReference.cache
+G:\Divya\intercollege\intercollege\obj\Release\intercollege.dll
+G:\Divya\intercollege\intercollege\obj\Release\intercollege.pdb
+G:\Divya\Project 2017\intercollege\intercollege\bin\intercollege.dll
+G:\Divya\Project 2017\intercollege\intercollege\bin\intercollege.pdb
+G:\Divya\Project 2017\intercollege\intercollege\obj\Release\ResolveAssemblyReference.cache
+G:\Divya\Project 2017\intercollege\intercollege\obj\Release\intercollege.dll
+G:\Divya\Project 2017\intercollege\intercollege\obj\Release\intercollege.pdb

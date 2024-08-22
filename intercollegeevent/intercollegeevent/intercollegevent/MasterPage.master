@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="head">
+        
+    
+       <center style=" font-size: xx-large; color: red ; font-weight: bold; width: 976px;">Inter College Event Management System</center> </div><div id="main"><div id="menu">
+        <table class="tbl" 
+            style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #009933">
+            <tr>
+                <td class="tblhead" colspan="2">
+                    Admin Login Area</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    <asp:Label ID="lbllogin" runat="server" Font-Size="10pt" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">
+                    UserName :
+                </td>
+                <td>
+                    <asp:TextBox ID="txtuname" runat="server" CssClass="txt"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="lbl">
+                    Password :
+                </td>
+                <td>
+                    <asp:TextBox ID="txtupass" runat="server" CssClass="txt" TextMode="Password"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    <asp:Button ID="btnlogin" runat="server" CssClass="btn" 
+                        onclick="btnlogin_Click" Text="Login" Width="70px" 
+                        CausesValidation="False" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="12px" CssClass="lnk" 
+                        PostBackUrl="~/FPassword.aspx">Forgot Password ?</asp:LinkButton>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table class="tbl">
+            <tr>
+                <td class="tblhead">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        </div>
+            <asp:Button ID="Button1" runat="server" CssClass="btn" Text="HOME" 
+                Width="130px" CausesValidation="False" PostBackUrl="~/index.aspx" />
+            
+            <asp:Button ID="Button4" runat="server" CssClass="btn" Text="About Us" 
+                Width="140px" CausesValidation="False" PostBackUrl="~/about.aspx" />
+                <asp:Button ID="Button2" runat="server" CssClass="btn" Text="College Login" 
+                Width="130px" CausesValidation="False" PostBackUrl="~/login.aspx" />
+            <asp:Button ID="Button6" runat="server" CssClass="btn" Text="Student login" 
+                Width="140px" CausesValidation="False" PostBackUrl="~/stud_login.aspx" />
+            <div id="cnt1"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></div></div></div>
+        
+    </form>
+</body>
+</html>

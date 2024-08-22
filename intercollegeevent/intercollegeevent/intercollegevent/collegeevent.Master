@@ -1,0 +1,266 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="collegeevent.master.cs" Inherits="intercollege.collegeevent" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title></title>
+  
+</head>
+<body bgcolor="#ccffcc">
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<script runat="server">
+
+   
+</script>
+<html>
+<head runat="server">
+<title>Inter College Event Management System</title>
+
+<!-- For-Mobile-Apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Exchange Education a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+
+<!-- Custom Theme files -->
+    <!-- Bootstrap Styling --> <link rel='stylesheet' href="css/bootstrap.css" type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap-Working-File --> <script src="js/bootstrap.min.js"></script>
+    <!-- Index-Page-Styling --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />   
+	<!-- Owl-Carousel-Styling --> <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+<!-- //Custom Theme files -->
+
+<!-- Smooth-Scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+        });
+    });
+</script>
+<!-- //Smooth-Scrolling -->
+
+<!-- Calender-JavaScript -->
+	<link rel="stylesheet" href="css/clndr.css" type="text/css" />
+	<script src="js/underscore-min.js" type="text/javascript"></script>
+	<script src= "js/moment-2.2.1.js" type="text/javascript"></script>
+	<script src="js/clndr.js" type="text/javascript"></script>
+	<script src="js/site.js" type="text/javascript"></script>
+<!-- //Calender-JavaScript -->
+  <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<!-- Body-Starts-Here -->
+<body bgcolor="#ccffcc">
+
+	<!-- Header-Starts-Here -->
+	<div class="header">
+
+		<!-- Navbar-Starts-Here -->
+	    <nav class="navbar navbar-inverse">
+	        <div class="container">
+	            <div class="navbar-header" style="background-color: #808080">
+
+	                <!-- Logo -->
+                    <br />
+                    <a class="navbar-brand" href="#">&nbsp;Inter College Event Management System<br /></a><!-- //Logo -->
+
+	            </div>
+	            
+	            <!-- Navbar-Collapse -->
+	            <div id="navbar" class="navbar-collapse collapse">
+
+	                <ul class="nav navbar-nav navbar-right" runat="server" id="menu" visible="false">
+                    <li><a href="index.aspx" >Home</a></li>
+		                <li><a href="about.aspx" >About</a></li>
+                    <li><a href="login.aspx">College Login</a></li>
+		                <li><a href="stud_login.aspx">Student Login</a></li>
+		               
+
+		                <!-- Login-Button -->
+		                
+		                <!-- //Login-Button -->
+
+		               
+
+	                </ul>
+                      <ul class="nav navbar-nav navbar-right" runat="server" id="stud_menu" visible="false">
+                    <li><a href="index.aspx" >Home</a></li>
+		                <li><a href="about.aspx" >About</a></li>
+                   <!--      <li><a href="#">Fund Help</a></li>-->
+                    <li><a href="colgEvent.aspx">Event</a></li>
+                         
+		                    <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+                                <li><a href="studprofile.aspx">Profile</a></li>
+					    		
+		                			<li><a href="Logout.aspx">Logout</a></li>
+				                </ul>
+		                </li>
+
+		                <!-- Login-Button -->
+		                
+		                <!-- //Login-Button -->
+
+		               
+
+	                </ul>
+                      <ul class="nav navbar-nav navbar-right" runat="server" id="admin_menu" visible="false">
+                    <li><a href="index.aspx">Home</a></li>
+		                <li><a href="manageCourse.aspx">Course</a></li>
+                        <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">College<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+                                <li><a href="colg_master.aspx">Add</a></li>
+					    		<li><a href="verifyclg.aspx">Verify</a></li>
+                                <li><a href="view_clg.aspx">View</a></li>
+				                </ul>
+		                </li>
+		                <!-- Dropdown -->
+		                <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Event<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+					    			<li><a href="manageEnotice.aspx">Add</a></li>
+		                			<li><a href="ManageEvents.aspx">Update</a></li>
+                                    	<li><a href="viewphoto.aspx">View Event Photo</a></li>
+				                </ul>
+		                </li>
+                        
+                         <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+					    		
+		                			<li><a href="Logout.aspx">Logout</a></li>
+				                </ul>
+		                </li> 
+	                </ul>
+                      <ul class="nav navbar-nav navbar-right" runat="server" id="user_menu" visible="false">
+                    <li><a href="index.aspx">Home</a></li>
+		                <li><a href="about.aspx">About</a></li>
+		                <!-- Dropdown -->
+		                <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+					    			<li><a href="studentreg.aspx">Add</a></li>
+		                			<li><a href="view_stud.aspx">View</a></li>
+				                </ul>
+		                </li>
+                         <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Event<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+                                <li><a href="viewEvents.aspx">View</a></li>
+		                			<li><a href="event_detail.aspx">Update Result</a></li><li><a href="votenow.aspx">Result</a></li>
+                                    	
+				                </ul>
+		                </li>
+                         
+		                <!-- //Dropdown -->
+                         <li role="presentation" class="dropdown carat1">
+			                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span> </a>
+				                <ul class="dropdown-menu dropdown1">
+                                <li><a href="CollegeProfile.aspx">Profile</a></li>
+					    			<li><a href="changepass.aspx">Reset Password</a></li>
+		                			<li><a href="Logout.aspx">Logout</a></li>
+				                </ul>
+		                </li>
+
+		                <!-- Login-Button -->
+		                
+		                <!-- //Login-Button -->
+
+		               
+
+	                </ul>
+
+	            </div>
+	            <!-- //Navbar-Collapse -->
+
+	        </div>
+	    </nav>
+	    <!-- //Navbar-Ends-Here -->
+
+		<!-- Carousel-Starts-Here -->
+		
+		<!-- //Carousel-Ends-Here -->
+
+	</div>
+	<!-- Header-Ends-Here -->
+
+    <!-- Content-Starts-Here -->
+    <div class="content">
+    	
+    	<!-- Heading --><!-- //Heading -->
+
+    	<div class="container">
+    		
+    		
+    		
+    		<!-- //About-Ends-Here -->
+
+    		<!-- Foreword-Starts-Here -->
+    		<div class="foreword slideanim" id="foreword">
+    			 
+
+                <form id="form1" runat="server">
+               <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    		</div>
+    		<!-- //Foreword-Ends-Here -->
+
+			
+
+			
+
+    	</div>
+
+    
+
+    </div>
+    <!-- Content-Ends-Here -->
+
+    <!-- Footer-Starts-Here -->
+  
+
+        <!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+                */
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- //Slide-To-Top JavaScript -->
+
+    </div>
+    <!-- //Footer-Ends-Here -->
+
+
+
+</body>
+<!-- Body-Ends-Here -->
+
+</html>

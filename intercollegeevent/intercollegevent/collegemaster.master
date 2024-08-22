@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="collegemaster.master.cs" Inherits="collegemaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="lhead">
+        
+    
+      
+              
+        
+    
+                    <center style="border-style: solid; font-size: xx-large; color: #11B300; font-weight: bold; width: 910px;">
+                        Inter College Event Management 
+                        Admin </center>
+    
+            
+                
+                </td>
+            </tr>
+        </table>
+    
+    </div><div id="main">
+       <div id="cnt"><div id="mnu">
+       
+            <asp:Button ID="Button2" runat="server" CssClass="btn" Text="Add Student" 
+                Width="130px" CausesValidation="False" PostBackUrl="~/studentreg.aspx" />
+            <asp:Button ID="Button3" runat="server" CssClass="btn" Text="View Student" 
+                Width="130px" CausesValidation="False" 
+                PostBackUrl="~/view_stud.aspx" />
+            <asp:Button ID="Button4" runat="server" CssClass="btn" Text="Add Event" 
+                Width="140px" CausesValidation="False" 
+                PostBackUrl="~/manageEnotice.aspx" />
+            <asp:Button ID="Button5" runat="server" CssClass="btn" Text="View Event" 
+                Width="140px" CausesValidation="False" PostBackUrl="~/viewEvents.aspx" />
+            <asp:Button ID="Button6" runat="server" CssClass="btn" Text="Update Event result" 
+                Width="140px" CausesValidation="False" 
+                PostBackUrl="~/event_detail.aspx" />
+            <asp:Button ID="Button7" runat="server" CssClass="btn" Text="Certificates" 
+                Width="140px" CausesValidation="False" PostBackUrl="~/uploadCerti.aspx" />
+            <asp:Button ID="Button8" runat="server" CssClass="btn" Text="Download " 
+                Width="140px" CausesValidation="False" PostBackUrl="~/viewcerti.aspx" />
+            <asp:Button ID="Button9" runat="server" CssClass="btn" Text="Update Profile" 
+                Width="120px" CausesValidation="False" 
+                PostBackUrl="~/CollegeProfile.aspx" />
+            <asp:Button ID="Button10" runat="server" CssClass="btn" Text="Change Password" 
+                Width="120px" CausesValidation="False" PostBackUrl="~/changepass.aspx" />
+            <asp:Button ID="Button11" runat="server" CssClass="btn" Text="Logout" 
+                Width="120px" CausesValidation="False" PostBackUrl="~/index.aspx" />
+		               
+            </div><div id="cnt1"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></div></div></div>
+       
+    </form>
+</body>
+</html>

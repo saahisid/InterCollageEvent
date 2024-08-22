@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="stud.master.cs" Inherits="stud" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div id="lhead">
+        
+    
+      
+              
+        
+    
+                    <center style="border-style: solid; font-size: xx-large; color: #11B300; font-weight: bold; width: 910px;">
+                        Inter College Event Management 
+                        Admin </center>
+    
+            
+                
+                </td>
+            </tr>
+        </table>
+    
+    </div><div id="main">
+       <div id="cnt"><div id="mnu">
+       
+            <asp:Button ID="Button2" runat="server" CssClass="btn" Text="Home" 
+                Width="130px" CausesValidation="False" PostBackUrl="~/index.aspx" />
+            <asp:Button ID="Button3" runat="server" CssClass="btn" Text="Event" 
+                Width="130px" CausesValidation="False" 
+                PostBackUrl="~/colgEvent.aspx" />
+            <asp:Button ID="Button9" runat="server" CssClass="btn" Text="Logout" 
+                Width="120px" CausesValidation="False" 
+                PostBackUrl="~/index.aspx" />
+		               
+            </div><div id="cnt1"><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></div></div></div>
+       
+    </form>
+</body>
+</html>

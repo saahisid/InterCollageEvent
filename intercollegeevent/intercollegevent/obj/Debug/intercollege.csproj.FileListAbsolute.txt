@@ -1,0 +1,25 @@
+G:\Divya\intercollege\intercollege\bin\intercollege.dll
+G:\Divya\intercollege\intercollege\bin\intercollege.pdb
+G:\Divya\intercollege\intercollege\obj\Debug\ResolveAssemblyReference.cache
+G:\Divya\intercollege\intercollege\obj\Debug\intercollege.dll
+G:\Divya\intercollege\intercollege\obj\Debug\intercollege.pdb
+G:\Divya\Project 2017\intercollege\intercollege\bin\intercollege.dll
+G:\Divya\Project 2017\intercollege\intercollege\bin\intercollege.pdb
+G:\Divya\Project 2017\intercollege\intercollege\obj\Debug\ResolveAssemblyReference.cache
+G:\Divya\Project 2017\intercollege\intercollege\obj\Debug\intercollege.dll
+G:\Divya\Project 2017\intercollege\intercollege\obj\Debug\intercollege.pdb
+F:\intercollege\intercollege\bin\intercollege.dll
+F:\intercollege\intercollege\bin\intercollege.pdb
+F:\intercollege\intercollege\obj\Debug\intercollege.csprojResolveAssemblyReference.cache
+F:\intercollege\intercollege\obj\Debug\intercollege.dll
+F:\intercollege\intercollege\obj\Debug\intercollege.pdb
+G:\intercollege\intercollege\bin\intercollege.dll
+G:\intercollege\intercollege\bin\intercollege.pdb
+G:\intercollege\intercollege\obj\Debug\intercollege.csprojResolveAssemblyReference.cache
+G:\intercollege\intercollege\obj\Debug\intercollege.dll
+G:\intercollege\intercollege\obj\Debug\intercollege.pdb
+C:\Users\Veena\Desktop\intercollege\intercollege\bin\intercollege.dll
+C:\Users\Veena\Desktop\intercollege\intercollege\bin\intercollege.pdb
+C:\Users\Veena\Desktop\intercollege\intercollege\obj\Debug\intercollege.csprojResolveAssemblyReference.cache
+C:\Users\Veena\Desktop\intercollege\intercollege\obj\Debug\intercollege.dll
+C:\Users\Veena\Desktop\intercollege\intercollege\obj\Debug\intercollege.pdb
